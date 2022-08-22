@@ -1,11 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bree+Serif&family=Josefin+Sans:ital,wght@1,500&family=Poppins:ital,wght@1,600&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 0px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 0px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: white; 
+  }
+
 .section{
-    border: 1px solid red;
+    // border: 1px solid red;
     width: 100%;
     height: 100vh;
 
@@ -14,5 +34,303 @@
         width: 100%;
         height: 100vh;
         overflow-y: scroll;
+        display: flex;
+        justify-content: center;
+
+        .user-video-img{
+            border: inherit;
+            width: 50%;
+            height: 720px;
+            
+            .gold-block{
+                border: inherit;
+                border-radius: 10px;
+                border: 1px solid lightgray;
+                // box-shadow: 1px 1px 10px gray;
+
+                .user-port{
+                    // border: inherit;
+                    width: 100%;
+                    height: 120px;
+                    display: flex;
+                    overflow-x:scroll;
+    
+                    .port{
+                        border: inherit;
+                        width: 100px;
+                        height: 120px;
+                        display: block;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        margin: 0 8px;
+    
+                        img{
+                            cursor: pointer;
+                            margin: 5px 0;
+                            width: 80px;
+                            height: 80px;
+                            object-fit: cover;
+                            border-radius: 50%;
+                            border-top: 3px solid rgba(223, 50, 85, 0.767);
+                            border-right: 3px solid rgba(141, 245, 22, 0.800);
+                            border-bottom: 3px solid rgba(65, 65, 209, 0.800);
+                            border-left: 3px solid rgba(214, 202, 31, 0.800);
+                        }
+
+                        p{
+                            cursor: pointer;
+                            font-family: Josefin Sans;
+                        }
+                    }
+                }
+            }
+
+            .posts{
+                border: inherit;
+                width: 100%;
+                height: 600px;
+                overflow-x: scroll;
+
+                .post{
+                    border: inherit;
+                    width: 95%;
+                    margin: auto;
+                    margin-top: 20px;
+                    border-radius: 20px;
+                    height: 605 px;
+
+                    .img-user-name-menyu{
+                        border: inherit;
+                        width: 100%;
+                        height: 60px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .img-user-name{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin: 0 10px;
+
+                            img{
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 50%;
+                                object-fit: cover;
+                                border-top: 3px solid rgba(223, 50, 85, 0.767);
+                                border-right: 3px solid rgba(141, 245, 22, 0.800);
+                                border-bottom: 3px solid rgba(65, 65, 209, 0.800);
+                                border-left: 3px solid rgba(214, 202, 31, 0.800);
+                            }
+
+                            p{
+                              margin: 10px;  
+                              font-size: 1.1rem;
+                              font-family: Acme;
+                            cursor: pointer;
+
+                                span{
+                                    display: block;
+                                    font-size: 0.9rem;
+                                    font-family: none;
+                                }
+                            }
+                        }
+
+                        i{
+                            font-size: 1.3rem;
+                            margin: 0 20px;
+                        }
+                    }
+
+                    .file{
+                        width:100%;
+                        height: 350px;
+                    }
+
+                    .like-masseg-save{
+                        margin: 5px 0;
+                        display: flex;
+                        justify-content: space-between;
+
+                        svg{
+                            margin: 5px;
+                        }
+                        
+                    }
+
+                    .commit{
+                        // border: inherit;
+                        padding: 0 10px;
+
+                        .like-son{
+                            // margin: 0 10px;
+                            font-size: 1.2rem;
+                            font-family: unset;
+                        }
+
+                        p{
+                            display: inline;
+
+                            .h6{
+                                display: inline-block;
+                            }
+                        }
+
+                        span{
+                            color: rgb(107, 105, 105);
+                        }
+
+                        .sms{
+                            display: block;
+                        }
+                    }
+
+                    .icons-tupe{
+                        border: inherit;
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+
+                        i{
+                            font-size: 1.7rem;
+                            margin: 0 10px;
+                        }
+
+                        input{
+                            outline: none;
+                            width: 500px;
+                            border: none;
+
+                            &:placeholder-shown{
+                                padding: 0 10px;
+                                font-family: cursive;
+                            }
+                        }
+
+                        h6{
+                            margin-left: 25px;
+                            font-size: 1.2rem;
+                            color: blue;
+                        }
+                    }
+                }
+            }
+        }
+
+        .user-profil{
+            border: inherit;
+            width: 25%;
+            height: 610px;
+            margin-left: 20px;
+
+            .profil{
+                border: inherit;
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                img{
+                    width: 75px;
+                    height: 75px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                p{
+                    margin: 5px 0;
+                    font-size: 1.2rem;
+                    font-family: Josefin Sans;
+                    
+                    span{
+                        display: block;
+                        font-size: 1rem;
+                        color: gray;
+                    }
+                }
+
+                h5{
+                    color: blue;
+                    margin-left: 10px;
+                    font-family: Bree Serif;
+                    letter-spacing: 1px;
+                    cursor: pointer;
+                }
+
+            }
+
+            .see-all{
+                border: inherit;
+                width: 100%;
+                height: 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                h5{
+                    color: rgb(110, 110, 110);
+                    font-family: Bree Serif;
+                }
+
+                h6{
+                    color: black;
+                    font-family: Bree Serif;
+                    cursor: pointer;
+                }
+            }
+
+            .friends{
+                border: inherit;
+                width: 100%;
+                height: 450px;
+                margin: 5px 0;
+
+                .friend{
+                    border: inherit;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 8px 0;
+                    
+                    .f-img-name{
+                        display: flex;
+                        img{
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                            border: 1px solid lightgray;
+                            cursor: pointer;
+                        }
+    
+                        p{
+                            font-family: Josefin Sans;
+                            margin-right: 20px;
+                            font-size: 1.2rem;
+                            margin: 0 10px;
+    
+                            span{
+                                display: block;
+                                color: gray;
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+
+                    h6{
+                        margin: 5px;
+                        font-size: 1.2rem;
+                        color: blue;
+                        letter-spacing: 1px;
+                        font-family: Acme;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
     }
 }
