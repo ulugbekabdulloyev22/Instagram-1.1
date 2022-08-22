@@ -93,7 +93,7 @@
                 overflow-x: scroll;
 
                 .post{
-                    border: inherit;
+                    border: 1px solid lightgray;
                     width: 95%;
                     margin: auto;
                     margin-top: 20px;
@@ -101,7 +101,7 @@
                     height: 605 px;
 
                     .img-user-name-menyu{
-                        border: inherit;
+                        // border: inherit;
                         width: 100%;
                         height: 60px;
                         display: flex;
@@ -189,7 +189,7 @@
                     }
 
                     .icons-tupe{
-                        border: inherit;
+                        // border: inherit;
                         display: flex;
                         justify-content: start;
                         align-items: center;
